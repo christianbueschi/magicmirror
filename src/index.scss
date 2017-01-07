@@ -1,0 +1,24 @@
+body,
+html {
+    background-color: black;
+    color: white;
+}
+
+.h1 {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    font-size: 4rem;
+
+    &.hello-appear {
+        opacity: 0.01;
+        top: 37%;
+
+        &.hello-appear-active {
+            opacity: 1;
+            top: 40%;
+            transition: all 2s ease-in;
+        }
+    }
+}
